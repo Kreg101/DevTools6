@@ -25,5 +25,5 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --target labwork5 -j 12
       
     - name: build tests
-      run: cmake --build ${{github.workspace}}/build --target all -j 12
+      run: cmake --build ${{github.workspace}}/build --target argparser_tests -j 12
 
