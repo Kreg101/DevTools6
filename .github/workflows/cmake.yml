@@ -26,4 +26,8 @@ jobs:
       
     - name: build tests
       run: cmake --build ${{github.workspace}}/build --target argparser_tests -j 12
+      
+    - name: run tests
+      working-directory: ${{github.workspace}}/build/tests/
+      run: ./argparser_tests
 
