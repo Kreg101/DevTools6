@@ -24,6 +24,6 @@ jobs:
     - name: build main executable
       run: cmake --build ${{github.workspace}}/build --target labwork5 -j 12
       
-    -name: build tests
+    - name: build tests
       run: cmake --build ${{github.workspace}}/build --target all -j 12
 
