@@ -29,5 +29,5 @@ jobs:
       
     - name: run tests
       working-directory: ${{github.workspace}}/build/tests/
-      run: ./argparser_tests
+      run: ./argparser_tests.cpp
 
