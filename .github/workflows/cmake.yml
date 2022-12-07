@@ -28,6 +28,13 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --target argparser_tests -j 12
       
     - name: run tests
-      working-directory: ${{github.workspace}}/build/tests/
+      working-directory: ${{github.workspace}}/build/
       run: ./argparser_tests.exe
+      
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.1
+      with: 
+        name: Executable file
+        path: ${{github.workspace}}/build/labwork5
+    
 
