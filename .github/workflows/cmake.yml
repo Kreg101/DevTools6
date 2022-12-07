@@ -8,7 +8,7 @@ on:
 
 env:
 
-  BUILD_TYPE: Release
+  BUILD_TYPE: "Release" 
 
 jobs:
   build:
