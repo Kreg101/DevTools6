@@ -115,7 +115,7 @@ TEST(ArgParserTestSuite, FlagsTest) {
 
     ASSERT_TRUE(parser.Parse(SplitString("app -ac")));
     ASSERT_TRUE(parser.GetFlag("flag1"));
-    ASSERT_TRUE(parser.GetFlag("flag"));
+    ASSERT_TRUE(parser.GetFlag("flag2"));
     ASSERT_TRUE(flag3);
 }
 
